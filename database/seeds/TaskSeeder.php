@@ -21,7 +21,7 @@ class TaskSeeder extends Seeder
                   -> take(rand(5,20))
                   -> get();
 
-            $tas = employees() -> attach($emps);
+            $tas -> employees() -> attach($emps);
           });
     }
 }

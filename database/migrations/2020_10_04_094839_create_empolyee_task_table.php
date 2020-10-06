@@ -13,7 +13,7 @@ class CreateEmpolyeeTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('empolyee_task', function (Blueprint $table) {
+        Schema::create('employee_task', function (Blueprint $table) {
             $table->id();
 
             $table -> bigInteger('employee_id') -> unsigned();
@@ -30,6 +30,6 @@ class CreateEmpolyeeTaskTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('empolyee_task');
+        Schema::dropIfExists('employee_task');
     }
 }
